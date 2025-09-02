@@ -1,0 +1,123 @@
+# LaTeX generated files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.run.xml
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.ps
+*.eps
+
+# LaTeX intermediate files
+*.figlist
+*.makefile
+*.figlist.bak
+*.fls.bak
+*.fdb_latexmk.bak
+
+# BibTeX
+*.bib.bak
+*.bib.sav
+
+# LaTeX Beamer
+*.snm
+*.nav
+*.vrb
+
+# LaTeX glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.lzo
+*.lzs
+
+# LaTeX index
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# LaTeX nomenclature
+*.nls
+*.nlo
+
+# LaTeX algorithms
+*.alg
+*.loa
+
+# LaTeX hyperref
+*.brf
+
+# LaTeX minitoc
+*.maf
+*.mlf
+*.mlt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# LaTeX listings
+*.lol
+
+# LaTeX changebar
+*.cb
+*.cb2
+
+# LaTeX fixme
+*.lox
+
+# LaTeX todo
+*.tdo
+
+# LaTeX glossaries-extra
+*.glstex
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Course-specific
+# Uncomment if you want to ignore student submissions or generated content
+# submissions/
+# grades/
+# solutions/

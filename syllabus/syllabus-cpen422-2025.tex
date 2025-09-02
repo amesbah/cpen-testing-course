@@ -1,0 +1,278 @@
+\documentclass [11pt]{article}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{setspace,amssymb,latexsym,amsmath,amscd,epsfig,amsthm,wasysym}
+%\usepackage{float}
+\usepackage{graphicx}
+%\usepackage{floatflt}
+\usepackage{mdwlist}
+\usepackage{listings}
+%\usepackage{enumitem}
+\usepackage{paralist}
+\usepackage{comment}
+\newcommand{\compresslist}{%
+  \setlength{\itemsep}{1pt}% 
+  \setlength{\parskip}{0pt}%
+  \setlength{\parsep}{0pt}%
+}
+
+\font\minihelv=phvr at 6pt
+\font\helv=phvr at 10pt
+\font\bighelv=phvr at 20pt
+\font\hugehelv=phvr at 36pt
+\font\mybigfont=phvr at 16pt
+\font\mymediumfont=phvr at 14pt
+\font\mediumhelv=phvr at 14pt
+\font\mybfit=ptmbi at 12pt
+
+\def\minivskip{\vskip 1.5mm}
+\def\myspace{\phantom{\Biggr\|}}
+\def\leavespace{\vskip 4mm}
+
+\def\cosec{\hbox{cosec}}
+\def\sec{\hbox{sec}}
+\def\cotan{\hbox{cotan}}
+
+\parindent=0pt
+\setlength{\evensidemargin}{0.0cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\topmargin}{-1.5cm}
+%\setlength{\baselineskip}{20pt}
+\setlength{\textwidth}{17cm}
+\setlength{\textheight}{23.5cm}
+\hoffset = -0.25cm
+
+\begin{document}
+
+   \begin{center}
+
+     {\bighelv   Software Testing and Analysis} \\
+     {\mediumhelv CPEN 422} \\
+     \ \\
+
+       
+    
+   \end{center}
+
+   
+
+	
+
+	\section*{COURSE INFORMATION}
+	
+	\begin{tabular}{l l}
+      Instructor:  & Ali Mesbah\\
+      Homepage: & \url{https://people.ece.ubc.ca/amesbah/} \\
+      E-mail: & \url{amesbah@ece.ubc.ca}  \\
+      %Office: & KAIS 4044 \\
+	  Office Hours:  & by appointment \\
+	  
+	  Teaching Assistant Info: & \\
+	  
+	  & Sijia Gu\\
+	  	 
+	  Course Web page: & UBC Canvas\\
+	  Discussion forum: & Piazza \\ 
+	  & \url{https://piazza.com/ubc.ca/winterterm12025/cpen422}\\
+
+  \end{tabular}
+	
+
+
+\subsubsection*{COMMUNICATION}
+
+Rather than emailing the teaching staff, students are encouraged to post questions on the discussion forum. Active and constructive participation on the forum counts towards participation marks.
+Find our Piazza page (see above).
+
+
+\section*{LECTURE DATES, TIMES, ROOMS}
+
+\begin{tabular}{l l}
+     Lecture:  & Mon \& Wed\\
+     %Lecture room: & Aquatic Ecosystems Research Laboratory	120\\
+     Lab: & See the UBC Course Calendar for your lab section
+     % Tutorial: (if applicable)	[Days & Times] [LOCATION]\\
+
+
+  \end{tabular}
+
+
+
+\section*{COURSE DESCRIPTION}
+%Contemporary concepts and techniques for developing intelligent interactive software applications: client-server architectures; web applications, RESTful APIs; models of application deployment; and AI-driven software construction.
+
+Inadequate software analysis and testing have been estimated to cost the global economy billions of dollars annually. This underscores the critical importance of robust, informed practices in software analysis and testing as foundational pillars of effective software engineering.
+
+This course delves into the essential processes, principles, and techniques that empower software engineers to perform rigorous software analysis and testing. Students will explore a comprehensive range of methodologies designed to ensure the reliability, efficiency, and overall quality of software applications.
+
+The primary objective of this course is to equip students with both the theoretical knowledge and practical skills necessary for the effective testing and analysis of software systems. Through a combination of lectures, case studies, and hands-on projects, students will gain valuable experience in identifying software defects, writing adequate tests, and ensuring that software meets its intended specifications.
+
+By the end of the course, students will have a solid understanding of the critical role that testing and analysis play in the software development lifecycle and will be prepared to apply these skills in real-world engineering environments.
+
+
+
+\section*{Learning Objectives}
+
+This course provides students with a comprehensive introduction to the fundamentals of software testing and analysis. By the end of the course, students will have gained a deep understanding of both the theoretical concepts and practical challenges involved in ensuring software quality. The course emphasizes the following key areas:
+
+\begin{itemize}
+    \item \textbf{Principles and Challenges of Software Testing:} Understand the core principles, methodologies, and common obstacles encountered in the testing process.
+    \item \textbf{Static and Dynamic Analysis:} Learn how to apply both static and dynamic analysis techniques to identify potential issues in software code and execution.
+    \item \textbf{Requirements-Based Testing and Acceptance Testing:} Explore the methods for ensuring that software meets specified requirements and is ready for release through thorough acceptance testing.
+    \item \textbf{Levels of Testing:} Gain proficiency in various testing levels, including unit, integration, and system testing, and understand their roles in the software development lifecycle.
+    \item \textbf{Regression Testing:} Study strategies for test selection, prioritization, and minimization to efficiently manage regression testing in evolving software systems.
+    \item \textbf{Test Oracles, Invariants, and Assertions:} Learn how to define and use test oracles, invariants, and assertions to validate software behavior and ensure correctness.
+    \item \textbf{Test Adequacy Criteria and Code Coverage:} Develop an understanding of test adequacy criteria and how to achieve comprehensive code coverage.
+    \item \textbf{Fault-Based Analysis and Mutation Testing:} Explore fault-based techniques, including mutation testing, to assess the effectiveness of test suites.
+    \item \textbf{Program Analysis:} Delve into advanced program analysis techniques, such as symbolic execution, concolic testing, control-flow analysis, and data-flow analysis.
+    \item \textbf{Problem Tracking, Debugging, and Fault Localization:} Acquire skills in identifying, tracking, and resolving software issues through debugging and fault localization.
+    \item \textbf{Program Repair:} Learn techniques for automatically repairing software defects and improving code reliability.
+    \item \textbf{Domain-Specific Software Testing:} Study the unique challenges of testing domain-specific software systems, including web applications, mobile apps, and graphical user interfaces (GUIs).
+    \item \textbf{Test Generation and AI-Assisted Testing:} Explore modern approaches to test generation, including the use of AI-assisted techniques to enhance test creation and execution.
+    \item \textbf{Automation and Tool Building:} Gain hands-on experience in building automated testing tools and frameworks to streamline and improve the efficiency of the testing process.
+\end{itemize}
+
+Through this course, students will be equipped with the necessary skills to effectively analyze and test software, ensuring that it meets the highest standards of quality and performance.
+
+\section*{COURSE ORGANIZATION / STRUCTURE}
+
+This course is structured to engage students through a variety of learning activities designed to provide a deep understanding and practical experience in software verification and testing. The course will be organized as follows to meet the stated learning objectives:
+
+\begin{itemize}
+ \item    Lectures:
+        Regular lectures will cover the theoretical foundations, principles, and emerging trends in software testing and verification. 
+        
+% \item Lab Assignments: students will be given assignments to gain hands-on practical experience. This will encourage the application of theoretical knowledge to real-world problems and foster teamwork and problem-solving skills.
+
+ \item   Readings: students will be assigned readings from textbooks and current research papers to supplement lecture material.
+
+ 
+  \item  Projects:
+        Students will work on projects that involve designing, implementing, and evaluating testing strategies for software applications. This will encourage the application of theoretical knowledge to real-world problems and foster teamwork and problem-solving skills.
+        
+\item   Report Writing and Presentations: Students will document their work in well-constructed reports, enhancing their technical writing skills; they will also present their work enhancing their communication skills.      
+
+  \item Examinations:
+        Comprehensive examinations (e.g., midterm, final) will be conducted to assess understanding of the theoretical concepts and the ability to apply them to practical scenarios.
+	
+\end{itemize}
+	
+\section*{STUDENT EVALUATION}
+
+  \begin{quote}
+	\begin{tabular}{ll}
+	Active Participation: & $05\%$\\
+	Presentations: & $10\%$\\
+	Midterm (\textbf{October 15}): & $15\%$\\
+	Lab Work: & $30\%$\\
+	Final Exam: & $40\%$\\
+	\end{tabular}
+	\end{quote}
+ 
+
+%\subsection*{Active Participation}
+Active participation includes class attendance, participation in discussions in the class and on Piazza, participation in in-class exercises, asking good questions, good presentations. %Negative points will result from not showing up, indifference, playing games, chatting, browsing social media, not paying attention, and sleeping in class.\\
+
+
+%You will be required to present a topic related to software testing. More details and instructions will follow.
+%either from the second textbook (Amman and Ouffutt) or a presentation and demo of a testing tool 
+%Student presentations are every Friday (in teams of two, you choose the team). There will be two presentations in each class and each team will present only once. 
+	
+
+	
+\section*{COURSE MATERIALS}
+
+Reading material and lecture notes form the main components of this course. There is no required textbook. However, the recommended textbooks for this course are:
+  
+  \begin{itemize}
+  \compresslist
+
+  \item Software Testing and Analysis, Process, Principles and Techniques, Pezze and Young, 2008. 
+	
+	Request a free digital copy of the book here:\\
+\url{https://ix.cs.uoregon.edu/~michal/book/free.php}\\	
+	
+
+
+    \item Effective Software Testing, A developer's guide, by Mauricio Aniche
+
+	
+	  \end{itemize}
+	  
+
+\section*{PREREQUISITES}
+Students are expected to (1) have experience programming software applications, and  (2) have a good understanding of software engineering fundamentals.
+
+
+ 
+
+
+\section*{Policies}
+
+\subsection*{General Policies}
+
+\begin{itemize}
+
+\item Lab work will be done in groups of two. You need to pick a partner by the beginning of the second week. You are free to discuss, share and collaborate with your partner without reservations. However, both of you will be jointly responsible for the solution you turn in. You may not share code or discuss ideas with any other pair of students working on the assignment. Further, both you and your partner will be awarded the same grade for the assignment. You are welcome to split up the work anyway you want. However, both of you will be expected to know the details of your solution to each assignment. We reserve the right to call upon you individually to explain the details of your solution. Failure to do so will result in you alone earning a 0 for the assignment.
+
+%\item The assignments cumulatively build upon each other, so not turning in even a single assignment can adversely impact your grade for future assignments. You will need to turn in the assignment in the lab on which it is due, by physically coming to your lab session. If you cannot come to the lab to turn in the assignment, you must make arrangements with TA's well ahead of time. Otherwise, you will receive a 0 for the assignment.
+
+\item All deadlines are hard unless you have a documented emergency. You may be called upon to produce documentation related to the nature of the emergency.
+
+%\item Makeup exams will be scheduled for those who miss exams only if a valid reason is provided (see UBC policies). If you have a conflict with the exam date/time, you must get instructor approval by email well in advance (minimum of one week's notice), so that alternate arrangements can be made, or else you’ll get a zero for it.
+
+\item Finally, it is your responsibility to keep up with course announcements, lectures and assignments via Canvas, Piazza, and coming to the lectures. 
+
+\end{itemize}
+
+
+\subsection*{USE OF AI}
+In recognition of the evolving landscape of software development and the increasing role of artificial intelligence (AI) in coding, this course allows the exploration and utilization of AI tools to enhance learning and productivity. However, all students must adhere to the following guidelines to ensure ethical use and integrity in learning:
+
+\begin{enumerate}
+    \item \textbf{Authorized Use:} Students may use AI tools for code generation, debugging, or optimization as part of their assignments given they meet the conditions listed here. 
+    \item \textbf{Understanding and Originality:} While AI can assist in generating code or providing solutions, students are expected to understand and be able to explain any code or content submitted. Reliance on AI should not replace the student's own learning, problem-solving, and coding skills.
+    \item \textbf{Attribution:} Any use of AI-generated code, text, images, or insights must be fully and clearly attributed, specifying what portions of the work were assisted by AI; the disclosure must be clear in their reports, code, presentations, etc. For code, explicit code comments are needed indicating the nature of the AI's contribution.
+    \item \textbf{Ethical Considerations:} Students must use AI tools responsibly, considering the ethical implications and avoiding any form of misuse that could lead to dishonesty, plagiarism, or other forms of academic misconduct.
+    \item \textbf{Enhancing Learning, Not Replacing It:} The intent of allowing AI in code assignments is to enhance educational outcomes, foster innovation, and familiarize students with tools they might use in their professional lives. It should not diminish the learning process or the acquisition of fundamental coding skills.
+    \item \textbf{Instructor's Discretion:} The instructor reserves the right to limit or prohibit the use of AI tools in any assignment if deemed necessary to preserve academic integrity or meet specific learning objectives.
+\end{enumerate}
+
+Violations will be referred to the dean and may result in receiving a 0 in the course and suspension.
+
+%If you use CoPilot, ChatGPT, or any other AI-based code generation service, you MUST disclose that in your code as comments and in your reports. Violations of this rule will be referred to the dean and may result in receiving a 0 in the course and suspension.
+
+%Also, do not look at old assignments or projects if you happen upon them while searching the web, and do not look at code belonging to students in the class currently. Make sure every line of code you commit is either provided by the teaching staf, or originated by you (or your partner). You must do all your own work.
+
+%Do not look at old assignments or projects if you happen upon them while searching the web, and do not look at code belonging to students in the class currently. Make sure every line of code you commit is either provided by us, or originated (conceived of and written) by you (or your partner). Tutors can not help you do your project work. You must do all your own work. Cases will be referred to the dean and students have received 0 in the course, and been suspended for copying in past terms.
+
+
+\subsection*{UBC ACADEMIC HONESTY AND STANDARDS}
+The academic enterprise is founded on honesty, civility, and integrity. As members of this enterprise, all students are expected to know, understand, and follow the UBC codes of conduct regarding academic integrity. At the most basic level, this means submitting only original work done by you and acknowledging all sources of information or ideas and attributing them to others as required. This also means you should not cheat, copy, or mislead others about what is your work. Violations of academic integrity (i.e., misconduct) lead to the breakdown of the academic enterprise, and therefore serious consequences arise and harsh sanctions are imposed. For example, incidents of plagiarism or cheating may result in a mark of zero on an assignment or exam and more serious consequences may apply if the matter is referred to the President’s Advisory Committee on Student Discipline. Careful records are kept in order to monitor and prevent recurrences.
+For more information, see: \url{http://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,286,0,0}
+
+
+\subsection*{NON-ACADEMIC MISCONDUCT}
+Mistreatment towards anyone in our Engineering community is not acceptable. Mistreatment is disrespectful or unprofessional behavior that has a negative effect on you or your learning environment, or conduct that is contrary to the principles that support a respectful environment. This includes making demeaning, offensive, belittling, and disrespectful comments, using abusive language, engaging in bullying, harassment, and discrimination. 
+If you have witnessed or been subject to mistreatment, there are people and support resources here to help. Find out how to get support or discuss an issue related to discrimination, bullying, harassment, or sexual misconduct through the non-academic misconduct link below:
+\url{https://academicservices.engineering.ubc.ca/degree-planning/non-academic-misconduct-discrimination-and-edi-i-support/}
+ECE students, faculty, and staff are also welcome to submit comments, suggestions, and requests around Equity, Diversity, Including and Indigeneity (EDII) in the ECE Department to our EDII Suggestion Box. Submissions can be anonymous, and are received directly by the ECE EDII Committee for review: \url{https://ece.ubc.ca/engage-with-ece/edii-suggestion-box/}
+
+\subsection*{HEALTH AND WELLNESS}
+UBC provides resources to support student learning and to maintain healthy lifestyles, while recognizing that challenges and crises can arise for students. There are resources in ECE and at UBC where students can find can help and support, including wellness, equity, inclusion and indigineity, resources for survivors of sexual violence, and health. Some frequently used resources are as follows:
+
+UBC values respect for the person and ideas of all members of the academic community. Harassment and discrimination are not tolerated nor is suppression of academic freedom. UBC provides appropriate accommodation for students with disabilities and for religious, spiritual and cultural observances. UBC values academic honesty and students are expected to acknowledge the ideas generated by others and to uphold the highest academic standards in all of their actions. Details of UBC’s respectful environment policies, which all students, staff and faculty are expected to follow, can be found here: \url{https://hr.ubc.ca/working-ubc/respectful-environment}
+
+
+
+
+\subsection*{ACADEMIC CONCESSION}
+The University is committed to supporting students in their academic pursuits. Students may request academic concession in circumstances that may adversely affect their attendance or performance in a course or program. Students who intend to, or who as a result of circumstance must, request academic concession must notify their instructor, dean, or director as specified in the link below.
+\url{https://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,329,0,0}
+Students seeking academic concession due to absence from the final exam for any reason must apply to Engineering Academic Services (EAS) within 72 hours of the missed exam. This is a standard practice for all final examinations at UBC. For more information, see: \url{https://academicservices.engineering.ubc.ca/exams-grades/academic-concession/}
+
+\subsection*{LAND ACKNOWLEDGMENT}
+This course is held on the UBC Point Grey (Vancouver) campus, which sits on the traditional, ancestral, unceded territory of the the Coast Salish Peoples. UBC is implementing its Indigenous Strategic Plan, taking a leading role in the advancement of Indigenous peoples’ human rights. To learn more about the Faculty of Applied Science’s role in building upon the Indigenous Strategic Plan and committing to Truth and Reconciliation, please visit: \url{https://apsc.ubc.ca/EDI.I}
+
+
+\end{document}
