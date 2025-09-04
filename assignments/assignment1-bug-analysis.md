@@ -19,13 +19,6 @@ Students will conduct a comprehensive analysis of a real bug from the Defects4J 
 
 **Assignment Distribution**: See `bug-assignments.md` for complete group assignments (Groups 1-19).
 
-**Sample Group Assignment (Group 1)**:
-- **Bug 1**: Commons-Lang #15
-- **Bug 2**: Math #42
-- **Bug 3**: Gson #8
-
-**Available Projects**: Commons-Lang, Commons-Math, Gson, Chart, Time, Closure, Mockito, Cli, Codec, Collections, Compress, Csv, JacksonCore, JacksonDatabind, JacksonXml, Jsoup, JxPath
-
 **Prerequisites**: Complete Defects4J setup following `defects4j-setup.md` before beginning analysis.
 
 ### Part 1: Bug Understanding and Reproduction (Week 1)
