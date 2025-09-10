@@ -2,7 +2,7 @@
 
 ## Overview
 
-Students will conduct a comprehensive analysis of a real bug from the Defects4J dataset, investigating why the bug was not caught by the original test suite and what testing approaches could have detected it.
+Students will conduct a comprehensive analysis of a real bug from the Defects4J dataset, focusing on how the bug manifests and how it was exposed by the triggering test case included in the benchmark.
 
 ## Learning Objectives
 
@@ -33,7 +33,7 @@ Students will conduct a comprehensive analysis of a real bug from the Defects4J 
 **Checkout Process for Each Bug**:
 ```bash
 # Create organized workspace
-mkdir ~/defects4j-workspace/assignment1
+mkdir -p ~/defects4j-workspace/assignment1
 cd ~/defects4j-workspace/assignment1
 
 # Example: Group 1 checking out their first bug (Commons-Lang #15)
@@ -50,28 +50,25 @@ defects4j test
 **Project Name Mappings** (use these for checkout commands):
 - Commons-Lang → `Lang`
 - Commons-Math → `Math`
-- Chart → `Chart`
-- Time → `Time`
+- JFreeChart → `Chart`
+- Joda-Time → `Time`
 - All other mappings found in `bug-assignments.md`
 
 #### Step 2: Bug Manifestation Analysis
 
 **Required Documentation** (for each of your 3 assigned bugs):
 
-1. **Bug Description**:
-   - What is the expected behavior vs. actual behavior?
-   - Under what conditions does the bug manifest?
-   - What are the symptoms visible to end users?
-
-2. **Failing Test Analysis**:
+1. **Failing Test Evidence**:
    - Which specific test(s) fail?
    - What do the failure messages tell us?
    - Are the failing tests unit tests, integration tests, or system tests?
+   - What specific inputs or configurations trigger the failure?
 
-3. **Bug Reproduction**:
-   - Document the exact steps to reproduce the bug
-   - Create a minimal example that demonstrates the bug
-   - Identify the specific inputs that trigger the bug
+2. **Bug Understanding**:
+   - What is the expected behavior vs. actual behavior?
+   - Under what conditions does the bug manifest? 
+   - why didn’t the rest of the test suite reveal it earlier?
+   - What are the symptoms visible to end users?
 
 **Multi-Bug Analysis Strategy**:
 - Complete initial analysis for all 3 bugs in Week 1
