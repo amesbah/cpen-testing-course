@@ -202,24 +202,24 @@ defects4j export -p dir.bin.tests
 
 ## Deliverables
 
-### Written Report (10-13 pages)
+### Written Report
 
-**Section 1: Multi-Bug Overview** (2-3 pages)
+**Section 1: Multi-Bug Overview** 
 - Brief analysis of all 3 assigned bugs
 - Bug type classification and comparison
 - Rationale for selecting primary bug for deep analysis
 
-**Section 2: Primary Bug Analysis** (4-5 pages)
+**Section 2: Primary Bug Analysis** 
 - Detailed bug description and manifestation
 - Root cause analysis with code evidence
 - Bug classification and severity assessment
 
-**Section 3: Coverage and Test Analysis** (3-4 pages)
+**Section 3: Coverage and Test Analysis** 
 - Coverage measurement results and analysis
 - Test suite structure and design assessment
 - Gap identification and testing failure analysis
 
-**Section 4: Recommendations and Insights** (2-3 pages)
+**Section 4: Recommendations and Insights** 
 - Specific test cases that would catch the primary bug
 - Broader testing strategy improvements
 - Cross-bug patterns and lessons learned
@@ -273,19 +273,17 @@ defects4j export -p dir.bin.tests
 
 ## Timeline
 
-- **Week 1**: 
   - Complete Defects4J setup following `defects4j-setup.md`
   - Checkout and analyze all 3 assigned bugs 
   - Select primary bug for deep dive analysis
   - Complete root cause investigation for primary bug
 
-- **Week 2**: 
   - Detailed coverage analysis and test investigation for primary bug
   - Develop and validate proposed test cases
   - Write comprehensive report
   - Prepare presentation with live demonstration
 
-- **End of Week 2**: Report submission and presentations
+  - Report submission and presentations
 
 ## Additional Resources
 
