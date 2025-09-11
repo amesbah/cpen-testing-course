@@ -15,11 +15,11 @@ Students will conduct a comprehensive analysis of a real bug from the Defects4J 
 
 ### Setup and Bug Assignment
 
-**Group Assignment**: Each group of 2 students receives 3 randomly assigned bugs from different Defects4J projects.
+**Group Assignment**: Each group receives 3 randomly assigned bugs from different Defects4J projects.
 
 **Assignment Distribution**: Each group will be given a private GitHub repository with the assigned bug ids. 
 
-**Prerequisites**: Defects4J's github repository is https://github.com/rjust/defects4j, Please complete Defects4J setup following its `README.md` before beginning analysis.
+**Prerequisites**: Defects4J's repository is https://github.com/rjust/defects4j, Please complete Defects4J setup following its `README.md` before beginning analysis.
 
 ### Bug Understanding and Reproduction
 
@@ -66,11 +66,11 @@ defects4j test
 **Multi-Bug Analysis Strategy**:
 - Complete initial analysis for all 3 bugs
 - Compare bug types and manifestation patterns
-- Select the most educational bug for deep dive analysis
+- Pick one primary bug (most educational) for the deep-dive in Step 3
 
-#### Step 3: Root Cause Investigation
+#### Step 3: Root Cause Investigation (deep-dive on the primary bug)
 
-**Required Analysis**:
+**Required Analysis**: Provide concrete code-level evidence.
 
 1. **Code Investigation**:
    - Identify the exact line(s) of code where the bug occurs
@@ -103,16 +103,17 @@ defects4j test
 
 ### Code Deliverables
 - Organized workspace with all 3 bug checkouts
+- Any helper scripts you used to reproduce/inspect (if any)
 
 ### Lab demonstration (5 minutes)
 - Brief overview of all 3 bugs
-- Detailed analysis of primary bug with live demonstration
+- Detailed analysis of primary bug: show fault location and reasoning
 - Q&A
 
-## Evaluation Criteria (5 points)
+## Evaluation Criteria (5 points total)
 
 ### Defects4J SetUp (1 point)
-- **Successfully set up Defects4J and checkout the three assigned bugs**
+- **All 3 bugs checked out and reproducible (compile + test)**
 
 ### Multi-Bug Analysis and Primary Bug Selection (2 points)
 - **Quality of initial analysis across all 3 bugs**
@@ -120,9 +121,9 @@ defects4j test
 - **Cross-bug comparison and pattern identification**
 
 ### Primary Bug Understanding and Analysis (2 points)
-- **Accuracy of root cause identification**
+- **Accurate fault localization and root cause identification**
 - **Depth of code analysis and evidence**
-- **Quality of bug reproduction and demonstration**
+- **Clear explanation of why other tests missed it and how to prevent it**
 
 
 ## Tips for Success
