@@ -2,7 +2,7 @@
 
 ## Group Bug Assignments
 
-Each group of 2 students has been randomly assigned 3 bugs from different Defects4J projects. Groups should analyze all 3 bugs but can focus their detailed analysis and presentation on the most interesting/educational one.
+Each group of 2 students has been randomly assigned 3 bugs from different Defects4J projects. Groups should analyze all 3 bugs.
 
 ### Group 1
 - **Bug 1**: _Commons-Lang #15_
