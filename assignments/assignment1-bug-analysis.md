@@ -111,12 +111,11 @@ defects4j test
 ### Defects4J SetUp (1 point)
 - **All 3 bugs checked out and reproducible (compile + test)**
 
-### Multi-Bug Analysis and Primary Bug Selection (2 points)
+### Multi-Bug Analysis (2 points)
 - **Quality of initial analysis across all 3 bugs**
-- **Appropriate selection and justification of primary bug**
 - **Cross-bug comparison and pattern identification**
 
-### Primary Bug Understanding and Analysis (2 points)
+### Bug Understanding and Analysis (2 points)
 - **Accurate fault localization and root cause identification**
 - **Depth of code analysis and evidence**
 - **Clear explanation of why other tests missed it and how to prevent it**
