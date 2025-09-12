@@ -89,13 +89,14 @@ defects4j test
 
 ### Deadlines and points 
 Demo sessions are **mandatory** for both teammates. Deadlines are firm: for each calendar day late, you lose 1 point on that assignment.
-| Part         | Points | Deadline | Demo lab|
-|---|---|---|---|
-| assignment 1 | 5 | Sep 23, 23:59 PST | Sep 25 |
-| assignment 2 | 6 | Oct 07, 23:59 PST | Oct 09 |
-| assignment 3 | 5 | Oct 21, 23:59 PST | Oct 23 |
-| assignment 4 | 7 | Nov 11, 23:59 PST | Nov 13 |
-| assignment 5 | 7 | Dec 02, 23:59 PST | Dec 04 |
+
+|     Part      | Points  |      Deadline      | Demo lab  |
+|:-------------:|:-------:|:------------------:|:---------:|
+| assignment 1  |    5    | Sep 23, 23:59 PST  |  Sep 25   |
+| assignment 2  |    6    | Oct 07, 23:59 PST  |  Oct 09   |
+| assignment 3  |    5    | Oct 21, 23:59 PST  |  Oct 23   |
+| assignment 4  |    7    | Nov 11, 23:59 PST  |  Nov 13   |
+| assignment 5  |    7    | Dec 02, 23:59 PST  |  Dec 04   |
 
 ### Written Report
 
@@ -133,7 +134,6 @@ Demo sessions are **mandatory** for both teammates. Deadlines are firm: for each
 
 
 ## Tips for Success
-
 1. **Start with the failing test** - understand what it's trying to verify, analyze the test execution trace
 2. **Use debugging tools** - step through code execution to understand flow
 3. **Read project documentation** - understand the intended behavior
@@ -146,12 +146,10 @@ Demo sessions are **mandatory** for both teammates. Deadlines are firm: for each
 10. **Ask for help** - use office hours and Piazza for technical difficulties
 
 ## Additional Resources
-
 - **Defects4J Documentation**: https://github.com/rjust/defects4j
 - **Course Forum**: Piazza for technical questions and clarifications
 
 ## Academic Integrity
-
 - **Collaboration**: You may collaborate freely within your assigned group
 - **External Help**: You may seek help understanding tools and techniques, but all analysis must be your own
 - **AI Tools**: If you use AI tools for background research or coding assistance, you must clearly document and attribute their use
