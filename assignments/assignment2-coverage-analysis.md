@@ -1,4 +1,4 @@
-# Assignment 2: Code Coverage and Test generation
+# Assignment 2: Code Coverage and Test Generation
 
 ### Part 1: Test Coverage Analysis
 
@@ -19,7 +19,7 @@ defects4j export -p dir.bin.tests
 # Use gradle/maven with JaCoCo plugin for detailed reports
 ```
 
-**Important**: Focus detailed coverage analysis on your chosen primary bug, but collect basic coverage data for all 3 bugs for comparative analysis.
+**Important**: Collect coverage data for all 3 bugs for comparative analysis.
 
 **Required Measurements**:
 
@@ -29,9 +29,9 @@ defects4j export -p dir.bin.tests
    - Method coverage percentage
 
 2. **Bug-Specific Coverage**:
-   - Is the buggy code covered by any tests?
-   - If covered, which tests execute the buggy code?
-   - If not covered, why is this code path missed?
+   - Is the fault covered by any tests?
+   - If covered, which tests execute the fault?
+   - If not covered, why is the faulty path missed?
 
 3. **Coverage Analysis**:
    - What is the coverage of the file/class containing the bug?
@@ -45,9 +45,9 @@ defects4j export -p dir.bin.tests
 1. **Existing Test Structure**:
    - How many tests exist for the buggy component?
    - What testing approaches are used (unit, integration, boundary testing)?
-   - Are there any tests that almost catch the bug?
 
 2. **Test Design Assessment**:
+   For the method/component containing the fault:
    - Do existing tests cover the input space adequately?
    - Are boundary conditions tested?
    - Are negative test cases (error conditions) tested?
@@ -55,16 +55,17 @@ defects4j export -p dir.bin.tests
 
 3. **Gap Identification**:
    - What specific test cases are missing?
-   - Why weren't these test cases written originally?
+   - Why weren't these test cases written originally? 
    - What assumptions did the original developers make?
 
-### Part 2: Testing Gap Analysis and Recommendations (Week 2)
+### Part 2: Testing Gap Analysis and Recommendations 
 
 #### Step 1: Root Cause of Testing Failure
 
 **Analysis Questions to Address**:
 
 1. **Why Was the Bug Missed?**
+   - How did the bug slip through? You might need to go to a previous version (before a failing test was added) to analyze this.
    - Was it a coverage gap (code not executed by tests)?
    - Was it an oracle problem (code executed but wrong behavior not detected)?
    - Was it an input space problem (right code, wrong test inputs)?
@@ -84,8 +85,9 @@ defects4j export -p dir.bin.tests
 **Design Specific Test Cases**:
 
 1. **Bug-Catching Test**:
-   - Write a specific test case that would have caught this bug
+   - Write your own test case that catches this bug specifically
    - Demonstrate that your test fails on the buggy version
+   - Measure coverage of your test
    - Verify that your test passes on the fixed version
    - **Testing with Fixed Version**:
      ```bash
@@ -105,3 +107,6 @@ defects4j export -p dir.bin.tests
    - What changes to the overall testing approach would prevent similar bugs?
    - What tools or techniques could improve test effectiveness?
    - How should the test suite be restructured or enhanced?
+
+
+
