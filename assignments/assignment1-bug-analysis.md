@@ -4,7 +4,7 @@
 
 Students will conduct a comprehensive analysis of a real bug from the Defects4J dataset, focusing on how the bug manifests and how it was exposed by the triggering test case included in the benchmark.
 
-## Learning Objectives
+## Overall Learning Objectives 
 
 - Understand how real bugs manifest in production codebases
 - Analyze the relationship between test coverage and bug detection
@@ -60,25 +60,22 @@ defects4j test
 2. **Bug Understanding**:
    - What is the expected behavior vs. actual behavior?
    - Under what conditions does the bug manifest? 
+   - What is the failure? 
+   - What is the fault?
+   - What is the error?
    - why didn’t the rest of the test suite reveal it earlier?
-   - What are the symptoms visible to end users?
-
-**Multi-Bug Analysis Strategy**:
-- Complete initial analysis for all 3 bugs
-- Compare bug types and manifestation patterns
-- Pick one primary bug (most educational) for the deep-dive in Step 3
-
-#### Step 3: Root Cause Investigation (deep-dive on the primary bug)
+   
+#### Step 3: Root Cause Investigation
 
 **Required Analysis**: Provide concrete code-level evidence.
 
 1. **Code Investigation**:
-   - Identify the exact line(s) of code where the bug occurs
-   - Trace the execution path that leads to the bug
+   - Identify the exact line(s) of code where the fault occurs
+   - Trace the execution path of the failure and how that leads to the fault
    - Understand the logic error or incorrect assumption
 
 2. **Context Analysis**:
-   - What is the purpose of the buggy code within the larger system?
+   - What is the purpose of the faulty code within the larger system?
    - What were the developers likely trying to accomplish?
    - Are there any comments or documentation that reveal intent?
 
@@ -91,12 +88,11 @@ defects4j test
 
 ### Written Report
 
-**Section 1: Multi-Bug Overview** 
+**Section 1: Bug Overview Analysis** 
 - Brief analysis of all 3 assigned bugs
 - Bug type classification and comparison
-- Rationale for selecting primary bug for deep analysis
 
-**Section 2: Primary Bug Analysis** 
+**Section 2: Deep Bug Analysis** 
 - Detailed bug description and manifestation
 - Root cause analysis with code evidence
 - Bug classification and severity assessment
@@ -128,7 +124,7 @@ defects4j test
 
 ## Tips for Success
 
-1. **Start with the failing test** - understand what it's trying to verify
+1. **Start with the failing test** - understand what it's trying to verify, analyze the test execution trace
 2. **Use debugging tools** - step through code execution to understand flow
 3. **Read project documentation** - understand the intended behavior
 4. **Compare buggy vs. fixed versions** - see exactly what changed
